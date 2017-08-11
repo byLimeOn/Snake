@@ -8,10 +8,25 @@ namespace Snake
 {
     class Program
     {
+
+        static void Draw(int x, int y, char sym)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Привет, Пупсень!");
-            Console.WriteLine("Капиатн Пупсень!");
+            int x1 = 1;
+            int y1 = 1;
+            char sym1 = '*';
+            Draw(x1, y1, sym1);
+
+            int x2 = 7;
+            int y2 = 13;
+            char sym2 = '@';
+            Draw(x2, y2, sym2);
+
             Console.ReadLine();
         }
     }
