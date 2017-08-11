@@ -19,6 +19,9 @@ namespace Snake
             Point p2 = new Point(7, 13, '#');
             p2.Draw();
 
+            HLine line = new HLine(3, 9, 20, '+');
+            line.Draw();
+
             Console.ReadLine();
         }
     }
