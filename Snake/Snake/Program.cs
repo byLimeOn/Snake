@@ -16,7 +16,7 @@ namespace Snake
             Point p1 = new Point(1, 1, '*');
             p1.Draw();
 
-            Point p2 = new Point(2, 5, '@');
+            Point p2 = new Point(7, 13, '#');
             p2.Draw();
 
             Console.ReadLine();
