@@ -10,12 +10,12 @@ namespace Snake
     {
         List<Point> pList;
 
-        public VLine(int yDown, int yTop, int x, char sym)
+        public VLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
-            for (int y = yDown; x <= yTop; y++)
+            for (int y = yUp; y <= yDown; y++)
             {
-                Point p = new Point(y, x, sym);
+                Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
         }
